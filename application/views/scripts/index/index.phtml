@@ -1,0 +1,27 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1><?php echo $this->projectName ?></h1>
+    </div>
+
+    <div class="menu">
+
+    </div>
+
+    <div class="logs">
+
+        <?php if(isset($this->logs) && !empty($this->logs)): ?>
+            <?php foreach($this->logs as $log): ?>
+                <p><?php echo $log ?></p>
+            <?php endforeach; ?>
+        <?php endif ?>
+
+    </div>
+</div>
+    </body>
+</html>
